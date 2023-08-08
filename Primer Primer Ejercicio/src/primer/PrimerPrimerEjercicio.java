@@ -6,6 +6,7 @@ public class PrimerPrimerEjercicio {
     public static void main(String[] args) {
         int num1,num2;
         Scanner scan=new Scanner(System.in);
+        Alumno Elias= new Alumno("Elias","Steinkamp",24,"415846843215","10/26","350");
         try{
         System.out.println("Inserte el primer numero");
         num1=scan.nextInt();
@@ -18,14 +19,11 @@ public class PrimerPrimerEjercicio {
         }
 //        Hola que tal, soy Juan
 //        Hola soy Mauro.
-<<<<<<< HEAD
 //        Holis Soy Lucia
-=======
-// Mi nombre es sergio
+//        Mi nombre es sergio
 
-//Hola  Soy Lucas!
->>>>>>> e52bc014860f4ca341dceb4ac7729f85dda6722d
-        // la ultima
+//        Hola  Soy Lucas!
+//        la ultima
     }
 
 }
