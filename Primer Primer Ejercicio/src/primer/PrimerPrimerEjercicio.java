@@ -17,6 +17,7 @@ public class PrimerPrimerEjercicio {
             System.out.println("ERROR el valor ingresado debe ser de tipo entero");
         }
 //        Hola que tal, soy Juan
+//        Hola soy Mauro.
     }
 
 }
