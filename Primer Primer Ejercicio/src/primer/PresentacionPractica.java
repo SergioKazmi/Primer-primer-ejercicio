@@ -4,31 +4,37 @@
  * and open the template in the editor.
  */
 package primer;
+import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
  * @author juan_
  */
 public class PresentacionPractica {
-    protected String nombre;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public PresentacionPractica(String nombre) {
-        this.nombre = nombre;
+    private ArrayList<Nombre> listaDeNombres = new ArrayList<>(); 
+    
+    public boolean buscarNombre(Nombre nombre){
+        for (int i = 0; i<listaDeNombres.size(); i++) {
+            if (listaDeNombres.get(i) == nombre) {
+                System.out.println("El nombre existe en la lista!");
+                return true;
+            }
+        }return false;
     }
     
-    public void nombre(){
-    Scanner leer = new Scanner(System.in);
-    
-    nombre = leer.nextLine();
-        System.out.println("Hola!" + nombre);
-    
+    public boolean agregarNombre(Nombre nombre){
+        if (!buscarNombre(nombre)) {
+            listaDeNombres.add(nombre);
+            System.out.println("Nombre agregado.");
+            return true;
+        }
+        System.out.println("Nombre existente.");
+        return false;
+    }
+    public void listarNombres(){
+        for (Nombre lista : listaDeNombres) {
+            System.out.println(lista);
+            
+        }
     }
 }
