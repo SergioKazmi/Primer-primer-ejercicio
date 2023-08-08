@@ -27,7 +27,7 @@ public class PresentacionPractica {
     public void nombre(){
     Scanner leer = new Scanner(System.in);
     
-    String nombre = leer.nextLine();
+    nombre = leer.nextLine();
         System.out.println("Hola!" + nombre);
     
     }

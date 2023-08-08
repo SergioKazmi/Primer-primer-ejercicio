@@ -18,7 +18,13 @@ public class PrimerPrimerEjercicio {
         }
 //        Hola que tal, soy Juan
 //        Hola soy Mauro.
+<<<<<<< HEAD
 //        Holis Soy Lucia
+=======
+// Mi nombre es sergio
+
+//Hola  Soy Lucas!
+>>>>>>> e52bc014860f4ca341dceb4ac7729f85dda6722d
     }
 
 }
