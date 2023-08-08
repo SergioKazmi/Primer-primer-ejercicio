@@ -6,6 +6,18 @@ public class PrimerPrimerEjercicio {
 
     
     public static void main(String[] args) {
+    Nombre nombre = new Nombre("Juan");
+    Nombre nombre1 = new Nombre("Sergio");
+    Nombre nombre2 = new Nombre("Lucia");
+    Nombre nombre3 = new Nombre ("Lucas");
+    
+    PresentacionPractica lista = new PresentacionPractica();
+    lista.agregarNombre(nombre);
+    lista.agregarNombre(nombre1);
+    lista.agregarNombre(nombre2);
+    lista.agregarNombre(nombre3);
+    
+    lista.listarNombres();
 
 //        int num1,num2;
 //        Scanner scan=new Scanner(System.in);
@@ -54,11 +66,6 @@ public class PrimerPrimerEjercicio {
 
 
     
-    Nombre nombre = new Nombre("Juan");
-    
-    PresentacionPractica lista = new PresentacionPractica();
-    lista.agregarNombre(nombre);
-    lista.listarNombres();
 
 }
 }
